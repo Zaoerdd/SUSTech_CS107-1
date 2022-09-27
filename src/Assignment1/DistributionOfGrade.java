@@ -27,11 +27,3 @@ public class DistributionOfGrade {
         System.out.printf("D: %d\n", a[3]);
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-//tykdddd
-=======
->>>>>>> parent of b621d13 (tykdd)
-=======
->>>>>>> parent of b621d13 (tykdd)
