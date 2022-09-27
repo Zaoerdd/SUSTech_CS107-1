@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b96a411-2431-4127-8466-12b100d49ef7" name="变更" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/Lab4/CalculatePi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/MultiplicationTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SUSTech_CS107/Lab4/CalculatePi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SUSTech_CS107/Lab4/CalculatePi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/CalculatePi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/CalculatePi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664256939445</updated>
-      <workItem from="1664256940990" duration="4298000" />
+      <workItem from="1664256940990" duration="4969000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1664257371973</created>

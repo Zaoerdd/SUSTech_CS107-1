@@ -11,7 +11,7 @@ public class CalculatePi {
         double pi = 0;
 
         int x = 1;
-        while (x < n) {
+        while (x < 2*n) {
             if ( x % 4 == 1 )
                 pi = pi + (double) 4/x;
             else
@@ -21,7 +21,7 @@ public class CalculatePi {
         System.out.printf("The estimation of Pi is %.6f\n", pi);
 
 
-        double exactPi = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679;
+        double exactPi = Math.PI;
         System.out.println("Please input the precision:");
         int y = 1;
         pi = 0;
