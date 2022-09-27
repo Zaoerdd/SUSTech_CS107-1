@@ -28,7 +28,10 @@ public class DistributionOfGrade {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 //tykdddd
+=======
+>>>>>>> parent of b621d13 (tykdd)
 =======
 >>>>>>> parent of b621d13 (tykdd)
