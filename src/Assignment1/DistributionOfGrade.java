@@ -27,3 +27,5 @@ public class DistributionOfGrade {
         System.out.printf("D: %d\n", a[3]);
     }
 }
+
+//tykdd
