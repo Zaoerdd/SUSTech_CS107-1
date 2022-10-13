@@ -5,7 +5,7 @@ import java.io.*;
 public class DoubleZhizheng {
     public static void main(String[] args) throws IOException {
 //        Scanner input = new Scanner(System.in)
-        File inFile = new File("C:\\Users\\tyk1304245946\\Desktop\\input9.in");
+        File inFile = new File("Filename");                     //请注意自行修改.in文件名
         FileInputStream fos = new FileInputStream(inFile);
         StreamTokenizer re = new StreamTokenizer(new BufferedReader(new InputStreamReader(fos)));
         re.nextToken();
