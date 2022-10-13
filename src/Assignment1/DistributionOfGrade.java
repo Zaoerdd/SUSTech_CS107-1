@@ -7,18 +7,14 @@ public class DistributionOfGrade {
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
-        int a[] = {0,0,0,0};
+        int[] a = {0, 0, 0, 0};
 
         for (int i = 0; i < n; i++) {
             int x = input.nextInt();
-            if (x>=90)
-                a[0]++;
-            else if (x>=80)
-                a[1]++;
-            else if (x >= 70)
-                a[2]++;
-            else if (x >= 60)
-                a[3]++;
+            if (x >= 90) a[0]++;
+            else if (x >= 80) a[1]++;
+            else if (x >= 70) a[2]++;
+            else if (x >= 60) a[3]++;
         }
 
         System.out.printf("A: %d\n", a[0]);

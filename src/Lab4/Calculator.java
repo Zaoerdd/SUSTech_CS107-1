@@ -15,18 +15,18 @@ public class Calculator {
         while (x != -1) {
             c = input.next().toCharArray()[0];
             y = input.nextFloat();
-            switch (c){
+            switch (c) {
                 case '+':
-                    System.out.printf("Result: %.1f\n", x+y);
+                    System.out.printf("Result: %.1f\n", x + y);
                     break;
                 case '-':
-                    System.out.printf("Result: %.1f\n", x-y);
+                    System.out.printf("Result: %.1f\n", x - y);
                     break;
                 case '*':
-                    System.out.printf("Result: %.1f\n", x*y);
+                    System.out.printf("Result: %.1f\n", x * y);
                     break;
                 case '/':
-                    System.out.printf("Result: %.1f\n", x/y);
+                    System.out.printf("Result: %.1f\n", x / y);
                     break;
                 default:
                     System.out.printf("Unknown Operator: %c\n", c);

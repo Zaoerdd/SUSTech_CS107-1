@@ -8,11 +8,11 @@ public class Months {
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
-        String list[] = {"yes","no","yes","no","yes","no","yes","yes","no","yes","no","yes"};
+        String[] list = {"yes", "no", "yes", "no", "yes", "no", "yes", "yes", "no", "yes", "no", "yes"};
 
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             int x = input.nextInt();
-            System.out.println(list[x-1]);
+            System.out.println(list[x - 1]);
         }
     }
 }

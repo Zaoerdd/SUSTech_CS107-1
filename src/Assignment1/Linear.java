@@ -15,7 +15,7 @@ public class Linear {
             float y2 = input.nextFloat();
             float x = input.nextFloat();
 
-            float y = (y2-y1)/(x2-x1) * (x-x1) + y1;
+            float y = (y2 - y1) / (x2 - x1) * (x - x1) + y1;
 
             System.out.printf("%.1f\n", y);
         }
