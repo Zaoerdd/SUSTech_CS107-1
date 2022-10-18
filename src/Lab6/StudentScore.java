@@ -19,6 +19,7 @@ public class StudentScore {
             }
         }
 
+
         System.out.println("            Course1     Course2     Course3     Average");
         for (int student = 0; student < students; student++) {
             System.out.printf("Student%d    ", student + 1);
