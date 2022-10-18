@@ -35,12 +35,11 @@ public class LargeNumberAddition {
                 }
             }
 
-            boolean flag = false;
-            for (int j = 0; j < length; j++) {
-                if (number1[j] > 0 || flag) {
-                    flag = true;
-                    System.out.printf("%d", number1[j]);
-                }
+            if (number1[0]>0){
+                System.out.printf("%d", number1[0]);
+            }
+            for (int j = 1; j < length; j++) {
+                System.out.printf("%d", number1[j]);
             }
             System.out.println();
         }
