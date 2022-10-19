@@ -6,22 +6,25 @@ import java.util.Scanner;
 public class BestPokerHand {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        char[][] pokers = new char[5][3];
+        char[] ranks = new char[5];
+        int[] ints = new int[5];
 
         for (int i = 0; i < 5; i++) {
-            pokers[i][0] = input.next().toCharArray()[0];
-            pokers[i][2] = input.next().toCharArray()[0];
+            ranks[i] = input.next().toCharArray()[0];
+            ints[i] = input.nextInt();
         }
 
-        if (Straight(pokers) & Flush(pokers)) {
+        Arrays.sort(ints);
+
+        if (Straight(ints) & Flush(ranks)) {
             System.out.println("Straight Flush");
-        } else if (Flush(pokers)) {
+        } else if (Flush(ranks)) {
             System.out.println("Flush");
-        } else if (Straight(pokers)) {
+        } else if (Straight(ints)) {
             System.out.println("Straight");
-        } else if (ThreeOfAKind(pokers)) {
-            System.out.println("Three of a kind");
-        } else if (Pair(pokers)) {
+        } else if (ThreeOfAKind(ints)) {
+            System.out.println("Three of a Kind");
+        } else if (Pair(ints)) {
             System.out.println("Pair");
         } else {
             System.out.println("High Card");
@@ -29,22 +32,17 @@ public class BestPokerHand {
 
     }
 
-    public static boolean Flush(char[][] pokers) {
-        char c = pokers[0][0];
+    public static boolean Flush(char[] ranks) {
+        char c = ranks[0];
         for (int i = 1; i < 5; i++) {
-            if (pokers[i][0] != c) {
+            if (ranks[i] != c) {
                 return false;
             }
         }
         return true;
     }
 
-    public static boolean Straight(char[][] pokers) {
-        int[] ints = new int[5];
-        for (int i = 0; i < 5; i++) {
-            ints[i] = pokers[i][2] - 48;
-        }
-        Arrays.sort(ints);
+    public static boolean Straight(int[] ints) {
         for (int i = 0; i < 4; i++) {
             if (ints[i] + 1 != ints[i + 1])
                 return false;
@@ -52,28 +50,15 @@ public class BestPokerHand {
         return true;
     }
 
-    public static boolean ThreeOfAKind(char[][] pokers) {
-        int[] ints = new int[5];
-        for (int i = 0; i < 5; i++) {
-            ints[i] = pokers[i][2];
-        }
-        Arrays.sort(ints);
-
+    public static boolean ThreeOfAKind(int[] ints) {
         for (int i = 0; i < 3; i++) {
             if (ints[i] == ints[i + 1] & ints[i + 2] == ints[i + 1])
                 return true;
         }
         return false;
-
-
     }
 
-    public static boolean Pair(char[][] pokers) {
-        int[] ints = new int[5];
-        for (int i = 0; i < 5; i++) {
-            ints[i] = pokers[i][2];
-        }
-        Arrays.sort(ints);
+    public static boolean Pair(int[] ints) {
         for (int i = 0; i < 4; i++) {
             if (ints[i] == ints[i + 1])
                 return true;
