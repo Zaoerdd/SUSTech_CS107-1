@@ -13,7 +13,7 @@ public class MissingNumbersInAnArray {
 
         for (int i = 0; i < n; i++) {
             int a = input.nextInt();
-            array[a-1] = true;
+            array[a - 1] = true;
         }
 
         boolean flag = false;

@@ -25,11 +25,10 @@ public class Matrix {
                     matrixs[k][i][j] = input.nextInt();
                 }
             }
-
-
-
-
         }
+        
+
+
 
 
     }

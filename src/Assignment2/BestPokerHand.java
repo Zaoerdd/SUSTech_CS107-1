@@ -29,7 +29,6 @@ public class BestPokerHand {
         } else {
             System.out.println("High Card");
         }
-
     }
 
     public static boolean Flush(char[] ranks) {
