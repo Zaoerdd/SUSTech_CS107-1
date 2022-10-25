@@ -43,24 +43,21 @@ public class BestPokerHand {
 
     public static boolean Straight(int[] ints) {
         for (int i = 0; i < 4; i++) {
-            if (ints[i] + 1 != ints[i + 1])
-                return false;
+            if (ints[i] + 1 != ints[i + 1]) return false;
         }
         return true;
     }
 
     public static boolean ThreeOfAKind(int[] ints) {
         for (int i = 0; i < 3; i++) {
-            if (ints[i] == ints[i + 1] & ints[i + 2] == ints[i + 1])
-                return true;
+            if (ints[i] == ints[i + 1] & ints[i + 2] == ints[i + 1]) return true;
         }
         return false;
     }
 
     public static boolean Pair(int[] ints) {
         for (int i = 0; i < 4; i++) {
-            if (ints[i] == ints[i + 1])
-                return true;
+            if (ints[i] == ints[i + 1]) return true;
         }
         return false;
     }

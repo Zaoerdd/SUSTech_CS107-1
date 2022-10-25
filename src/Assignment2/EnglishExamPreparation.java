@@ -34,7 +34,7 @@ public class EnglishExamPreparation {
             }
 
             int sum = Arrays.stream(matrix[0]).sum();
-            if (sum>=100){
+            if (sum >= 100) {
                 System.out.println(0);
                 continue;
             }

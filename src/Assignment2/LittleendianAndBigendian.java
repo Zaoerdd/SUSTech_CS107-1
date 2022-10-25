@@ -19,9 +19,6 @@ public class LittleendianAndBigendian {
             System.out.print(str.charAt(0));
             System.out.print(str.charAt(1));
             System.out.print(" ");
-
         }
-
-
     }
 }
