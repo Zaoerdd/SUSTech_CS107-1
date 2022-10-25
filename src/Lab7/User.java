@@ -20,11 +20,11 @@ public class User {
     }
 
     private boolean match(String password) {
-        return (password == this.password);
+        return (password.equals(this.password));
     }
 
     public void introduce() {
-        System.out.printf("%s 's account has a balance of %.2f dollar\n", account, money);
+        System.out.printf("%s's account has a balance of %.2f dollar\n", account, money);
     }
 
     public void deposit(double money){
@@ -39,18 +39,18 @@ public class User {
             System.out.println("but no sufficient balance");
         } else {
             System.out.println("okay");
-            System.out.println("Please input your password");
-            String password = input.next();
             boolean flag = false;
             for (int i = 2; i >= 0; i--) {
                 if (!flag){
+                    System.out.println("Please input your password");
+                    String password = input.next();
                     if (match(password)) {
                         System.out.printf("Withdraw %.2f dollar and balance is %.2f dollar\n", money, this.money - money);
                         this.money -= money;
                         flag = true;
                     }
                     else{
-                        System.out.printf("password error, there are %d left to try\n", i);
+                        System.out.printf("password error, there are %d times left to try\n", i);
                     }
                 }
             }
